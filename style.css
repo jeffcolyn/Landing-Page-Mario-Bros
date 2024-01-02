@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo-mario {
+    width: 300px;
+}
+
+.imagem-mario-luigi {
+    height: 600px;
+}
+
+.caixa-principal {
+    width: 40%;
+}
+
+.caixa-video-mario {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+    filter: blur(3px);
+  
+}
+
+.mascara-video {
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+p {
+    color: white;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    background: #C51111;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #23af2a;
+}
+
+
+/* formulario */
+
+.contato-box {
+    background-color: #fff;
+    display: flex;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    left: -220px;
+    flex-direction: column;
+    position: fixed;
+    transition: left 1s linear;
+}
+
+.contato-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-box h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.contato-box label {
+    margin-bottom: 8px;
+}
+
+.contato-box input,
+.contato-box textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.contato-box textarea {
+    resize: vertical;
+}
+
+.contato-box button {
+    background-color: #C51111;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contato-box button:hover {
+    background-color: #23af2a;
+}
+
+
+/* fim formulario */
